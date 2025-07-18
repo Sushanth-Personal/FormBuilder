@@ -1,0 +1,381 @@
+.landingPage {
+  background: linear-gradient(0deg, #121212, #121212),
+    linear-gradient(0deg, #171923, #171923),
+    linear-gradient(0deg, #171923, #171923);
+
+  width: 100vw;
+  padding-top: 22px;
+}
+
+.userName{
+  color:#FFA400;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.navBar {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 40px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+
+.logoContainer h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.signIn {
+  border: 1px solid #7ea6ff;
+  background: transparent;
+  width: 87px;
+  height: 40px;
+  border-radius: 6px;
+  color: #7ea6ff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transform: 150ms ease-in-out;
+}
+
+.signIn:hover {
+  cursor: pointer;
+  filter:brightness(0.9);
+  transform: scale(0.95);
+}
+.createBot {
+  border: none;
+  background-color: #1a5fff;
+  width: 173px;
+  height: 40px;
+  border-radius: 6px;
+  color: #ffffff;
+  box-shadow: 0px 1px 0px 0px #ffffff33 inset;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transform: 150ms ease-in-out;
+}
+
+.createBot:hover {
+  cursor: pointer;
+  filter:brightness(0.9);
+  transform: scale(0.95);
+}
+
+.body {
+  margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 7.2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(90deg, #4b83ff 0%, #b794f4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  text-align: center;
+  width: 80%;
+}
+
+.content p {
+  margin: 24px 0px;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #ffffff92;
+  text-align: center;
+  margin-bottom: 32px;
+  width: 70%;
+}
+
+.svgLeft {
+  height: auto;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.svgRight {
+  height: auto;
+  position: absolute;
+  right: 0;
+}
+
+.createBotButton {
+  border: none;
+  background-color: #1a5fff;
+  width: 292px;
+  aspect-ratio: 4.56;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 0px 1px 0px 0px #ffffff33 inset;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  transform: 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.createBotButton:hover {
+  filter:brightness(0.9);
+  transform: scale(0.95);
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6%;
+  margin-bottom: 15%;
+}
+.landingpageBanner {
+  width: 83.33%;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15.5%;
+  padding-bottom: 40px;
+  width: 100vw;
+  aspect-ratio: 4.63;
+}
+
+.footerContent {
+  width: 100%;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #ffffff92;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col1,
+.col2,
+.col3,
+.col4 {
+  width: 22%;
+  height: 190px;
+}
+
+.footerContent ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 8px;
+}
+
+.footerContent ul li {
+  text-decoration: underline;
+  line-height: 24px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.footerContent .link {
+  width: 16px;
+  height: 16px;
+}
+
+.footerContent h1 {
+  line-height: 30px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.col1 h1 {
+  margin-bottom: 24px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  line-height: 22px;
+  color: #ffffff92;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media screen and (max-width: 1350px) {
+  .svgLeft,
+  .svgRight {
+    width: 21%;
+  }
+
+  .content h1 {
+    font-size: clamp(2rem, 5vw, 7.2rem);
+  }
+
+  .content p {
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
+  }
+
+  .createBotButton {
+    width: 28%;
+    min-width: 256px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .footerContent h1 {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+  }
+
+  .footerContent {
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+  }
+
+  .col1,
+  .col2,
+  .col3,
+  .col4 {
+    font-size: clamp(
+      0.9rem,
+      2.2vw,
+      1.5rem
+    ); /* Adjust font size for column content */
+    flex-grow: 1;
+  }
+
+  .footerContent ul li {
+    /* font-size: clamp(
+      1rem,
+      2vw,
+      1.3rem
+    );  */
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    padding: 40px;
+  }
+
+  .col1 img {
+    width: 10%;
+    height: 10%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .navBar {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    margin-bottom: 120px;
+    margin-top: 40px;
+  }
+
+  .logoContainer {
+    margin-right: 30px;
+  }
+  .logoContainer h1 {
+    font-size: 5.5rem;
+    margin-left: 20px;
+  }
+
+  .logoContainer img {
+    width: 55px;
+    height: 55px;
+  }
+  .rightContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .createBot {
+    display: none;
+  }
+
+  .createBotButton {
+    min-width: 200px;
+  }
+
+  .signIn {
+    width: 300px;
+  }
+
+  .footerContent {
+    flex-wrap: wrap;
+  }
+
+  .footerContent ul{
+    row-gap: 2px;
+  }
+
+  .footer {
+    padding-right: 0px;
+  }
+
+  .col1 {
+    flex: 1 1 100%; /* Occupy the full width for the top row */
+    height: 100px;
+    margin-bottom: 50px;
+  }
+
+  .col2,
+  .col3,
+  .col4 {
+    flex: 1 1 calc(33.33% - 16px);
+    min-width: 150px;
+    max-width: calc(33.33% - 16px);
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+    .logoContainer h1{
+        font-size: clamp(3rem, 10vw, 5.5rem);
+    }
+
+    .signIn {
+        width: 40%;
+    }
+}

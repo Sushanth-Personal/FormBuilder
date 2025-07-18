@@ -1,0 +1,110 @@
+.error {
+  color: #f55050;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Strict two-column layout */
+  gap: 20px;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .formGrid {
+    grid-template-columns: 1fr; /* Stack to one column on small screens */
+  }
+}
+
+.bubble {
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.2s ease;
+  width: 100%;
+  margin-top:5px;
+}
+
+.input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.submitContainer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.submitButton {
+  background-color: #4a90e2;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: #357ab8;
+}
+
+.textBubble {
+  grid-column: 1 / -1; /* Span both columns for full width */
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.textBubbleHeading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+}

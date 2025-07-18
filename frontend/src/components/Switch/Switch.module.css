@@ -1,0 +1,79 @@
+/* Switch.module.css */
+
+/* Switch container */
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Switch */
+.mdcSwitch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 51px;
+  height: 21px;
+  background-color: #B1B1B1;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.mdcSwitchSelected {
+  background-color: #1A5FFF;
+}
+
+.mdcSwitchHandleTrack {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  right: 4px;
+  width: calc(100% - 8px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: justify-content 0.3s ease;
+}
+
+.mdcSwitchUnselected .mdcSwitchHandleTrack {
+  justify-content: flex-start;
+}
+
+.mdcSwitchSelected .mdcSwitchHandleTrack {
+  justify-content: flex-end;
+}
+
+.mdcSwitchHandle {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mdcSwitchIcon{
+  display: none;
+}
+.mdcSwitchFocusRingWrapper .mdcSwitchFocusRing {
+  display: none;
+}
+
+.mdcSwitch:focus .mdcSwitchFocusRingWrapper .mdcSwitchFocusRing {
+  opacity: 1;
+}
+
+label {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
